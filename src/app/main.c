@@ -11,7 +11,7 @@ int main(){
      if (!petya[1])
          printf("error tmod");
     void (*id)()=dlsym(petya[1],"get_id");
-    printf("%d\n",id());
+    printf("%d\n",id);
     void (*temp)()=dlsym(petya[1],"get_temp");
     dlclose(petya[1]);
     dlclose(petya[0]);
