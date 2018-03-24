@@ -1,5 +1,6 @@
 TEMPLATE = subdirs
 SUBDIRS = app \
-tmod
-
+tmod \
+tmodm
 app.depends = tmod
+app.depends = tmodm
